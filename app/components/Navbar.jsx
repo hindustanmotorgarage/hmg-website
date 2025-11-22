@@ -7,23 +7,28 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="w-full bg-white shadow-md">
+    <header className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
       {/* Top Bar */}
       <div className="w-full bg-[#ff5b00] text-white py-2 px-4 flex justify-between text-sm">
         <p className="hidden md:block">
           Welcome to Hindustan Motor Garage – Excellence in Car Repair & Maintenance
         </p>
 
-        <div className="flex items-center gap-3 ml-auto md:ml-0 ">
-          <span className="">Follow Us On:</span>
-          <i className="fab fa-facebook"></i>
-          <i className="fab fa-instagram"></i>
-          <i className="fab fa-youtube"></i>
+        <div className="flex items-center gap-3 ml-auto md:ml-0">
+          <span>Follow Us:</span>
+          <a
+            href="https://www.instagram.com/hindustan_motor_garage/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xl"
+          >
+            <i className="fab fa-instagram"></i>
+          </a>
         </div>
       </div>
 
       {/* Main Navbar */}
-      <nav className="flex items-center justify-between px-6 py-4">
+      <nav className="flex  items-center justify-between px-6 py-4">
         {/* Logo */}
         <div className="flex items-center gap-2">
           <Image src="/images/logo.png" alt="Logo" width={50} height={50} className=" border rounded-md" />
@@ -34,7 +39,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex text-2xl items-center gap-8 text-[#00214d] font-medium">
+        <ul className="hidden md:flex text-xl items-center gap-8 text-[#00214d] font-medium">
           <li
             className="hover:text-[#ff5b00] cursor-pointer"
             onClick={() => document.getElementById("home").scrollIntoView({ behavior: "smooth" })}
@@ -97,18 +102,46 @@ export default function Navbar() {
 
         {/* Mobile Menu Items */}
         <ul className="mt-16 flex flex-col gap-6 text-lg text-[#00214d] font-medium px-6">
-          <li onClick={() => setOpen(false)} className="hover:text-[#ff5b00] cursor-pointer">
-            Home
+          <li>
+            <a
+              href="#home"
+              onClick={() => setOpen(false)}
+              className="hover:text-[#ff5b00] cursor-pointer"
+            >
+              Home
+            </a>
           </li>
-          <li onClick={() => setOpen(false)} className="hover:text-[#ff5b00] cursor-pointer">
-            About
+
+          <li>
+            <a
+              href="#about"
+              onClick={() => setOpen(false)}
+              className="hover:text-[#ff5b00] cursor-pointer"
+            >
+              About
+            </a>
           </li>
-          <li onClick={() => setOpen(false)} className="hover:text-[#ff5b00] cursor-pointer">
-            Services
+
+          <li>
+            <a
+              href="#services"
+              onClick={() => setOpen(false)}
+              className="hover:text-[#ff5b00] cursor-pointer"
+            >
+              Services
+            </a>
           </li>
-          <li onClick={() => setOpen(false)} className="hover:text-[#ff5b00] cursor-pointer">
-            Contact
+
+          <li>
+            <a
+              href="#contact"
+              onClick={() => setOpen(false)}
+              className="hover:text-[#ff5b00] cursor-pointer"
+            >
+              Contact
+            </a>
           </li>
+
 
           {/* Mobile Button */}
           <button

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <section id="home" className="relative w-full h-[90vh] flex items-center px-10 bg-[#001b3a] text-white overflow-hidden">
+    <section id="home" className="relative w-full h-[100vh] flex items-center px-10 bg-[#001b3a] text-white overflow-hidden pt-[140px]">
       {/* Background Image */}
       <Image
         src="/images/repairing car.jpg"

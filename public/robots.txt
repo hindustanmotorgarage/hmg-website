@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.hindustanmotorgarage.in
+
+# Sitemaps
+Sitemap: https://www.hindustanmotorgarage.in/sitemap.xml
