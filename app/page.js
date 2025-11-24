@@ -16,9 +16,9 @@ export default function Home() {
       {/* Left Content */}
       <div className="relative z-10 max-w-xl">
         <p className="text-[#ff5b00] font-semibold mb-2 text-lg">⚙ Repairing Services</p>
-        <h1 className="text-5xl font-bold leading-tight">
-          Your One-Stop Solution for Car Repair,<br /> AC Service & Accident Work
-        </h1>
+        <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug md:leading-tight ">
+  Your One-Stop Solution for Car Repair,<br /> AC Service & Accident Work
+</h1>
 
 
         <p className="mt-4 text-gray-200">

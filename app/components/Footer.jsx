@@ -1,16 +1,19 @@
 const Footer = () => {
     return (
         <footer id="footer" className="bg-[#041534] text-white ">
-            <div className="text-center text-gray-100  mb-7  mt-10 border-t border-gray-700 pt-5 px-4">
+
+            {/* Address Section – fixed spacing */}
+            <div className="text-center text-gray-100 mb-7 border-t border-gray-700 pt-3 px-4">
                 <div className="flex items-center justify-center gap-3 flex-wrap">
                     <i className="fa-solid fa-location-dot text-[#ff5b00] text-2xl"></i>
 
-                    <span className="text-xl leading-relaxed">
+                    <span className="text-xl leading-relaxed ">
                         Near Autonation Car Care, Opp. Anand Hotel, Near Kakoshi Chokdi,  
                         Sidhapur – 384151.
                     </span>
                 </div>
             </div>
+
             {/* Top Footer */}
             <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
 
@@ -86,21 +89,8 @@ const Footer = () => {
                 </div>
             </div>
 
-            {/* Address Bar */}
-            {/* <div className="text-center text-gray-100 text-sm mt-10 border-t border-gray-700 pt-5 px-4">
-                <div className="flex items-center justify-center gap-3 flex-wrap">
-                    <i className="fa-solid fa-location-dot text-[#ff5b00] text-xl"></i>
-
-                    <span className="text-base leading-relaxed">
-                        Near Autonation Car Care, Opp. Anand Hotel, Near Kakoshi Chokdi,  
-                        Sidhapur – 384151.
-                    </span>
-                </div>
-            </div> */}
-
             {/* Bottom Bar */}
             <div className="bg-orange-600 mt-6 py-4 text-xs sm:text-sm flex flex-col md:flex-row justify-center md:justify-between items-center px-6 gap-3 md:gap-0">
-
                 <p className="text-center">Copyright © 2025 Hindustan Motor Garage. All Rights Reserved.</p>
 
                 <div className="flex gap-4">
@@ -109,6 +99,7 @@ const Footer = () => {
                     <span>• Support</span>
                 </div>
             </div>
+
         </footer>
     );
 };

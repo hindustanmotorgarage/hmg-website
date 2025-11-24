@@ -24,10 +24,12 @@ export default function ContactSection() {
   ];
 
   return (
-    <section id="contact" className="w-full py-16 md:py-20 bg-[#fff7f2]">
+    <section
+      id="contact"
+      className="w-full py-16 md:py-20 bg-[#fff7f2] overflow-hidden pt-[140px]"
+    >
       <div className="max-w-7xl mx-auto px-5 md:px-10 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-14 items-center">
 
-        
         {/* Left Image */}
         <div className="relative w-full h-[320px] sm:h-[380px] md:h-[500px]">
           <Image
@@ -37,7 +39,6 @@ export default function ContactSection() {
             className="rounded-3xl object-cover shadow-lg"
           />
         </div>
-        
 
         {/* Right Content */}
         <div>
@@ -46,7 +47,7 @@ export default function ContactSection() {
           </p>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight text-[#001b3a] mb-4">
-            Connect With Our  
+            Connect With Our
             <span className="text-[#ff5b00]"> Expert Technicians</span>
           </h1>
 
@@ -56,11 +57,11 @@ export default function ContactSection() {
           </p>
 
           {/* Contact Cards */}
-          <div className="space-y-6">
+          <div className="space-y-8">
             {contacts.map((person, index) => (
               <div
                 key={index}
-                className="flex flex-col sm:flex-row sm:items-center gap-5 p-4 sm:p-5 bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_6px_26px_rgba(0,0,0,0.10)] transition-all duration-300"
+                className="flex flex-col sm:flex-row sm:items-center gap-5 p-5 bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_6px_26px_rgba(0,0,0,0.10)] transition-all duration-300"
               >
                 {/* Icon */}
                 <div className="w-16 h-16 bg-[#ff5b00] text-white rounded-full flex items-center justify-center text-2xl shadow-md mx-auto sm:mx-0">
@@ -69,13 +70,16 @@ export default function ContactSection() {
 
                 {/* Text */}
                 <div className="flex-1 text-center sm:text-left">
-                  <p className="text-lg sm:text-xl font-semibold text-[#001b3a] flex flex-wrap gap-1 justify-center sm:justify-start">
+                  <p className="text-xl font-semibold text-[#001b3a]">
                     {person.name}
-                    <span className="text-gray-500 font-medium">— {person.role}</span>
+                  </p>
+
+                  <p className="text-gray-500 text-sm sm:text-base -mt-1">
+                    {person.role}
                   </p>
 
                   {/* Phone */}
-                  <p className="text-lg text-[#001b3a] font-semibold mt-1">
+                  <p className="text-lg text-[#001b3a] font-semibold mt-2">
                     <a href={`tel:${person.number}`}>{person.number}</a>
                   </p>
 
@@ -96,13 +100,11 @@ export default function ContactSection() {
                     </a>
                   </div>
                 </div>
-
               </div>
             ))}
           </div>
 
         </div>
-
       </div>
     </section>
   );

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AboutUs() {
   return (
-    <section id="about" className="w-full py-16 px-6 md:px-16 bg-white">
+    <section id="about" className="w-full py-16 px-6 md:px-16 bg-white overflow-hidden pt-[140px]">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
 
         {/* LEFT IMAGE STACK */}

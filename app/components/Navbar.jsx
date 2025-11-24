@@ -28,13 +28,13 @@ export default function Navbar() {
       </div>
 
       {/* Main Navbar */}
-      <nav className="flex  items-center justify-between px-6 py-4">
+      <nav className="flex  items-center justify-between px-6 py-3 ">
         {/* Logo */}
         <div className="flex items-center gap-2">
           <Image src="/images/logo.png" alt="Logo" width={50} height={50} className=" border rounded-md" />
           <div>
-            <h2 className="text-2xl font-semibold text-[#00214d]">Hindustan Motor Garage</h2>
-            <p className="text-sm -mt-1 text-[#ff5b00]">Repairing Services</p>
+            <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-[#00214d] leading-tight">Hindustan Motor Garage</h2>
+            <p className="text-xs sm:text-sm -mt-1 text-[#ff5b00]">Repairing Services</p>
           </div>
         </div>
 
@@ -145,9 +145,12 @@ export default function Navbar() {
 
           {/* Mobile Button */}
           <button
-            onClick={() =>
-              document.getElementById("footer").scrollIntoView({ behavior: "smooth" })
-            }
+            onClick={() => {
+              setOpen(false);
+              setTimeout(() => {
+                document.getElementById("footer").scrollIntoView({ behavior: "smooth" });
+              }, 200);
+            }}
             className="bg-[#ff5b00] text-white px-6 py-3 rounded-md shadow-md hover:bg-[#e04f00] transition w-full md:w-auto text-center"
           >
             SEE ADDRESS ↓
