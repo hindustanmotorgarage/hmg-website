@@ -20,6 +20,7 @@ export const metadata = {
     "Car mechanic Sidhpur",
     "Car service near me",
   ],
+  
   authors: [{ name: "Hindustan Motor Garage" }],
   creator: "Hindustan Motor Garage",
   publisher: "Hindustan Motor Garage",
@@ -31,7 +32,9 @@ export const metadata = {
   alternates: {
     canonical: "https://www.hindustanmotorgarage.in",
   },
-
+  icons: {
+    icon: "/images/favicon.ico", // ✅ favicon / logo placed in public/logo.png
+  },
   openGraph: {
     title: "Hindustan Motor Garage – Best Car Repair in Sidhpur",
     description:
