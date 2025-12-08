@@ -33,7 +33,7 @@ export const metadata = {
     canonical: "https://www.hindustanmotorgarage.in",
   },
   icons: {
-    icon: "/images/favicon.ico", // ✅ favicon / logo placed in public/logo.png
+    icon: "/images/favicon.svg", // ✅ favicon / logo placed in public/favicon.svg
   },
   openGraph: {
     title: "Hindustan Motor Garage – Best Car Repair in Sidhpur",
